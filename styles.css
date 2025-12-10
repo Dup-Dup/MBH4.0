@@ -128,3 +128,19 @@ body{
   .screen{width:160px}
   .waitlist-form input{min-width:100%}
 }
+
+/* Footer Social Icons */
+.footer-social .icon {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    object-fit: contain;
+    margin: 0 10px;
+    opacity: 0.85;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.footer-social .icon:hover {
+    opacity: 1;
+    transform: scale(1.12);
+}
