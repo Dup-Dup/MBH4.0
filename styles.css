@@ -131,12 +131,19 @@ body{
 
 /* Footer Social Icons */
 .footer-social img.icon {
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
+  width: 28px;
+  height: 28px;
   display: inline-block;
+  margin: 0 8px;
   object-fit: contain;
+  opacity: 0.9;
 }
+.footer-social img.icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
 
 
 
