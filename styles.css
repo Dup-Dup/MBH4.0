@@ -130,24 +130,13 @@ body{
 }
 
 /* Footer Social Icons */
-.footer-social .icon {
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-    object-fit: contain;
-    margin: 0 10px;
-    opacity: 0.85;
-    transition: opacity 0.25s ease, transform 0.25s ease;
+.footer-social img.icon {
+  width: 26px;
+  height: 26px;
+  margin: 0 10px;
+  display: inline-block;
+  object-fit: contain;
 }
 
-.footer-social .icon:hover {
-    opacity: 1;
-    transform: scale(1.12);
-}
 
-.footer-social img,
-.footer-social svg {
-    width: 26px !important;
-    height: 26px !important;
-}
 
