@@ -26,13 +26,13 @@
   <meta name="description" content="MuslimBetterHalf is a privacy-first Muslim matchmaking app built for Nikah — with verified profiles, women-first safety, and Islamic values at the core.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="Muslim marriage, Muslim matchmaking, Nikah app, halal dating alternative, Islamic marriage app, Muslim spouse finder, Muslim single men women, Muslim matrimony, Islamic matchmaking, Muslim singles">
-  <meta name="theme-color" content="#0d0d0f">
+  <meta name="theme-color" content="#050609">
 
   <!-- Favicon -->
   <link rel="icon" href="assets/60x60.png">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
@@ -56,421 +56,597 @@
     }
   }
   </script>
+
+  <title>MuslimBetterHalf — The Safest Muslim Marriage App</title>
 </head>
 
-
 <body>
-
   <!-- HEADER -->
   <header class="site-header">
     <div class="topbar container">
       <div class="brand">
-        <img src="assets/logo.png" alt="MuslimBetterHalf logo" class="logo" />
+        <img src="assets/logo.png" alt="MuslimBetterHalf logo" class="logo" loading="lazy" />
         <div class="brand-text">
           <h1>MuslimBetterHalf</h1>
           <small>Halal · Private · Serious</small>
         </div>
       </div>
 
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it Works</a>
+        <a href="#investors">For Investors</a>
+        <a href="#blog">Insights</a>
+      </nav>
+
       <div class="controls">
-        <button id="themeToggle" class="toggle" aria-pressed="false">Light</button>
-        <button class="btn btn-cta" onclick="scrollToAnchor('#signup')">Join Waitlist</button>
+        <button id="themeToggle" class="toggle" aria-pressed="false" aria-label="Toggle light and dark theme">
+          Light
+        </button>
+        <button class="btn btn-cta" onclick="scrollToAnchor('#signup')">
+          Join Waitlist
+        </button>
       </div>
     </div>
 
     <div class="hero container">
-      <div class="hero-copy">
-        <h2 class="hero-title">Halal matchmaking done with Islamic values at heart.</h2>
-        <p class="lead">A privacy-first matchmaking platform designed for Muslims. Women-first safety, guardian options, and verified profiles — built for marriage, not casual dating.</p>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Privacy-first · Women-first · Nikah-focused</p>
+        <h2 class="hero-title">
+          Halal matchmaking done<br class="desktop-break">
+          with Islamic values at heart.
+        </h2>
+        <p class="lead">
+          A Muslim marriage platform built for trust, not swipes — human-verified profiles, guardian options, and women-first safety to protect your dignity online.
+        </p>
 
         <div class="hero-ctas">
           <a class="btn btn-primary animate-cta" href="#signup">Get Early Access</a>
-          <a class="btn btn-ghost" href="#how">How it works</a>
+          <button class="btn btn-ghost" type="button" onclick="scrollToAnchor('#how')">
+            See how it works
+          </button>
         </div>
 
         <ul class="hero-features">
-          <li>Photo &amp; ID verification</li>
-          <li>Women-first privacy</li>
-          <li>Guardian / Family mode</li>
+          <li>Human photo & ID verification</li>
+          <li>Women-first privacy controls</li>
+          <li>Guardian / family involvement</li>
         </ul>
       </div>
 
-      <div class="hero-media">
-        <img src="assets/Preview.png" alt="App illustration" class="hero-illustration hero-large" />
+      <div class="hero-media reveal">
+        <div class="hero-media-card">
+          <div class="hero-glow"></div>
+          <img
+            src="assets/Preview.png"
+            alt="MuslimBetterHalf mobile app preview"
+            class="hero-illustration hero-large"
+          />
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-
     <!-- WHY MBH -->
     <section id="features" class="section container reveal">
-      <div class="centered">
+      <header class="section-header">
         <h2>Why MuslimBetterHalf?</h2>
-        <p class="muted">Privacy-first, human verification, and religion-centered filters to ensure serious, respectful connections.</p>
-      </div>
+        <p class="muted">
+          Built from the ground up for Muslims seeking Nikah — not casual dating — with safety, sincerity, and Islamic values at the core.
+        </p>
+      </header>
 
       <div class="three-boxes">
-        <div class="box reveal">
+        <article class="box">
           <h3>Human ID Verification</h3>
-          <p>Our global verification team reviews each profile with secure processes.</p>
-        </div>
-        <div class="box reveal">
+          <p>Every profile is reviewed by a distributed human verification team — no anonymous, throwaway accounts.</p>
+        </article>
+        <article class="box">
           <h3>Women-First Safety</h3>
-          <p>Blur photos, control visibility, and enable guardian mode anytime.</p>
-        </div>
-        <div class="box reveal">
-          <h3>Faith-Based Matching</h3>
-          <p>Filters for practice level, sect, prayer habits &amp; family expectations.</p>
-        </div>
+          <p>Control who sees your photos, keep your identity private until you're ready, and involve a wali or family member.</p>
+        </article>
+        <article class="box">
+          <h3>Faith-Aligned Matching</h3>
+          <p>Filters for practice level, prayer habits, family expectations, and readiness for Nikah — not just appearance.</p>
+        </article>
       </div>
     </section>
 
     <!-- SHOWCASE -->
     <section class="section showcase container reveal">
-      <div class="centered">
+      <header class="section-header">
         <h2>Real Profiles. Real Intentions.</h2>
-        <p class="muted">MBH showcases verified, serious Muslims looking for Nikah.</p>
-      </div>
+        <p class="muted">
+          MuslimBetterHalf showcases verified Muslims actively seeking a serious, halal path to marriage.
+        </p>
+      </header>
 
       <div class="showcase-images">
-        <img src="assets/Spotlight.png" class="featured-image reveal" alt="Spotlight screen" />
-        <img src="assets/Discover.png" class="featured-image reveal" alt="Discover screen" />
+        <img
+          src="assets/Spotlight.png"
+          class="featured-image"
+          alt="Spotlight view of a verified Muslim profile"
+          loading="lazy"
+        />
+        <img
+          src="assets/Discover.png"
+          class="featured-image"
+          alt="Discover screen with MuslimBetterHalf profiles"
+          loading="lazy"
+        />
       </div>
     </section>
 
-    <!-- VALUES -->
+    <!-- VALUES / PATTERN -->
     <section class="section pattern-section reveal">
-      <div class="centered">
-        <h2>A Safe Space for Serious Muslims Seeking Nikah</h2>
-        <p class="muted">We combine technology, human verification, and Islamic values to create a halal path to marriage.</p>
+      <div class="container">
+        <header class="section-header center">
+          <h2>A Safe Space for Serious Muslims Seeking Nikah</h2>
+          <p class="muted">
+            We combine technology, human verification and Islamic values to create a dignified, halal path to marriage for Muslims globally.
+          </p>
+        </header>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
     <section id="how" class="section container reveal">
-      <div class="centered">
+      <header class="section-header">
         <h2>How Verification Works</h2>
-        <p class="muted">Secure, respectful verification that increases trust across the community.</p>
-      </div>
+        <p class="muted">
+          A clear, respectful, three-step process designed to protect the community and keep fake profiles out.
+        </p>
+      </header>
 
-      <div class="three-boxes">
-        <div class="box">
-          <h3>1. Upload ID</h3>
-          <p>Your document is encrypted and never displayed publicly.</p>
-        </div>
-        <div class="box">
-          <h3>2. Call Center Verification</h3>
-          <p>Our team confirms your identity via a secure voice call.</p>
-        </div>
-        <div class="box">
-          <h3>3. Profile Approved</h3>
-          <p>Only then do you appear to other users — fully authenticated.</p>
-        </div>
+      <div class="three-boxes numbered">
+        <article class="box">
+          <span class="step-pill">1</span>
+          <h3>Upload Secure ID</h3>
+          <p>Your document is encrypted, reviewed only by trained staff, and never displayed publicly.</p>
+        </article>
+        <article class="box">
+          <span class="step-pill">2</span>
+          <h3>Human Call Verification</h3>
+          <p>Our team confirms your identity via a secure voice call — adding an extra layer of trust.</p>
+        </article>
+        <article class="box">
+          <span class="step-pill">3</span>
+          <h3>Profile Approved</h3>
+          <p>Only then does your profile go live, clearly marked as verified to others.</p>
+        </article>
       </div>
     </section>
 
     <!-- APP SCREENS -->
     <section class="section container reveal">
-      <div class="centered">
+      <header class="section-header">
         <h2>Inside the App</h2>
-        <p class="muted">Clean, elegant screens built for privacy and clarity.</p>
-      </div>
+        <p class="muted">Clean, modern, privacy-centric design for a calm and dignified matchmaking experience.</p>
+      </header>
 
       <div class="screenshot-grid">
-        <img src="assets/Private Photos.png" class="screen reveal" alt="Private photos screen" />
-        <img src="assets/Spotlight.png" class="screen reveal" alt="Spotlight screen" />
-        <img src="assets/Q57.png" class="screen reveal" alt="Question screen" />
+        <img
+          src="assets/Private Photos.png"
+          class="screen"
+          alt="Private photo controls in MuslimBetterHalf"
+          loading="lazy"
+        />
+        <img
+          src="assets/Spotlight.png"
+          class="screen"
+          alt="Highlighted verified profile"
+          loading="lazy"
+        />
+        <img
+          src="assets/Q57.png"
+          class="screen"
+          alt="Questionnaire and preferences screen"
+          loading="lazy"
+        />
       </div>
     </section>
 
     <!-- SIGNUP -->
-    <section id="signup" class="section container reveal">
-      <div class="centered">
+    <section id="signup" class="section container reveal signup-section">
+      <header class="section-header center">
         <h2>Be the First to Join</h2>
-        <p class="muted">Sign up now and get early access before official launch.</p>
-      </div>
+        <p class="muted">
+          Join the early access list for launch updates, beta invites, and priority verification slots.
+        </p>
+      </header>
 
       <form
         class="waitlist-form"
-        action="https://muslimbetterhalf.us5.list-manage.com/subscribe/post?u=3f7214accb2e7deb79ffafe22&amp;id=4ca03372c6&amp;f_id=00c5b2e3f0"
+        action="https://muslimbetterhalf.us5.list-manage.com/subscribe/post?u=3f7214accb2e7deb79ffafe22&id=4ca03372c6&f_id=00c5b2e3f0"
         method="post"
         target="_blank"
         novalidate
       >
-        <input type="email" name="EMAIL" placeholder="Enter your email" required />
-        <button class="btn btn-primary" type="submit">Get Early Access</button>
+        <input
+          type="email"
+          name="EMAIL"
+          placeholder="Enter your best email"
+          aria-label="Email address"
+          required
+        />
+        <button class="btn btn-primary" type="submit">
+          Get Early Access
+        </button>
       </form>
-      <div class="centered">
-      <p class="muted small">We respect your privacy — we will never sell your data.</p>
- </div>
 
+      <p class="muted small">We respect your privacy — your email will only be used for MuslimBetterHalf updates.</p>
     </section>
 
-    <!-- FOUNDER MESSAGE -->
+    <!-- TESTIMONIALS -->
+    <section class="section container reveal">
+      <header class="section-header">
+        <h2>Success Stories</h2>
+        <p class="muted">Early members who felt safe, seen, and respected throughout the process.</p>
+      </header>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <img src="assets/member1.jpg" class="testimonial-photo" alt="Noor, founding member" loading="lazy" />
+          <blockquote>“I joined because my sister recommended them. I felt safe from the start.”</blockquote>
+          <cite>— Noor, Founding Member</cite>
+        </article>
+
+        <article class="testimonial-card">
+          <img src="assets/member2.jpg" class="testimonial-photo" alt="Ayesha, early member" loading="lazy" />
+          <blockquote>“The safety features are simple, reliable, and designed with real care.”</blockquote>
+          <cite>— Ayesha</cite>
+        </article>
+
+        <article class="testimonial-card">
+          <img src="assets/member3.jpg" class="testimonial-photo" alt="Ali, beta tester" loading="lazy" />
+          <blockquote>“Loving the beta testing experience so far. It feels built for Muslims, not adapted from dating apps.”</blockquote>
+          <cite>— Ali</cite>
+        </article>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP PLANS -->
+    <section class="section container reveal">
+      <header class="section-header">
+        <h2>Simple, Honest Membership Plans</h2>
+        <p class="muted">Flexible options that prioritize trust and safety — not endless swiping.</p>
+      </header>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <h3>Free</h3>
+          <p class="price">$0</p>
+          <ul>
+            <li>Browse verified profiles</li>
+            <li>Basic filters & search</li>
+            <li>Limited connections per month</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card pricing-featured">
+          <div class="badge">Most Popular</div>
+          <h3>Premium</h3>
+          <p class="price">$19<span>/month</span></p>
+          <ul>
+            <li>Unlimited connections</li>
+            <li>Advanced filters & safety controls</li>
+            <li>Guardian mode & enhanced privacy</li>
+            <li>Priority support & verification</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <h3>Elite</h3>
+          <p class="price">$99<span>/month</span></p>
+          <ul>
+            <li>Concierge support</li>
+            <li>Hand-picked introductions</li>
+            <li>Deeper profile review & coaching</li>
+            <li>Dedicated safety liaison</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOUNDER SECTION -->
     <section class="section container reveal founder-section">
-      <div class="founder-card">
-        <div class="founder-photo-wrap">
-          <img src="assets/founder.png" alt="Founder of MuslimBetterHalf" class="founder-photo" />
-        </div>
+      <div class="founder-layout">
         <div class="founder-copy">
           <h2>From the Founder</h2>
-          <p class="founder-greeting">Assalamu Alaikum wa Rahmatullahi wa Barakatuh,</p>
           <p class="muted">
-            As a Muslim, a technologist, and a member of this community, I kept hearing the same story:
-            sisters feeling unsafe online, families unsure who to trust, and good-intentioned brothers and sisters
-            struggling to find a halal path to Nikah.
+            MuslimBetterHalf was born after seeing family and friends struggle with unsafe, unserious, and culturally mismatched platforms.
+            We wanted a space where Muslims — especially women — feel protected, respected, and taken seriously in their search for Nikah.
           </p>
-          <p class="muted">
-            MuslimBetterHalf was built to solve that — with real human verification, women-first privacy,
-            and a product that respects both Islamic values and modern user expectations.
-          </p>
-          <p class="muted">
-            Our goal is simple: to become the most trusted home for Muslims seeking marriage,
-            In shaa Allah — where dignity, intention, and safety come first.
+          <p>
+            Our promise is simple: no compromise on safety, no compromise on Islamic values,
+            and no compromise on dignity. Technology should serve the ummah, not the other way around.
           </p>
           <p class="founder-signoff">— Founder, MuslimBetterHalf</p>
         </div>
+        <div class="founder-photo-wrap">
+          <!-- Replace founder.jpg with your actual file in /assets/ -->
+          <img src="assets/founder.jpg" alt="Founder of MuslimBetterHalf" class="founder-photo" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- INVESTOR SECTION -->
+    <section id="investors" class="section container reveal investor-section">
+      <header class="section-header">
+        <h2>For Investors</h2>
+        <p class="muted">
+          A defensible, values-driven platform in a rapidly growing global market of digitally native Muslim singles.
+        </p>
+      </header>
+
+      <div class="investor-grid">
+        <article class="investor-card">
+          <h3>Why Now?</h3>
+          <ul>
+            <li>Growing Muslim middle class with smartphone-first behavior.</li>
+            <li>Existing apps treat Muslims as an “add-on” — not the core audience.</li>
+            <li>Safety, verification, and family involvement are still undersolved.</li>
+          </ul>
+        </article>
+
+        <article class="investor-card">
+          <h3>Our Edge</h3>
+          <ul>
+            <li>Women-first & guardian-friendly by design.</li>
+            <li>Human verification layer as trust moat.</li>
+            <li>Brand built openly around Islamic values, not generic “dating.”</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- PREMIUM COMPARISON TABLE -->
+      <div class="comparison-wrap">
+        <h3 class="comparison-title">How We Compare</h3>
+        <div class="comparison-table" role="table" aria-label="MuslimBetterHalf vs Muzz comparison">
+          <div class="comparison-row comparison-header" role="row">
+            <div class="comparison-cell" role="columnheader">Feature</div>
+            <div class="comparison-cell highlight" role="columnheader">MuslimBetterHalf</div>
+            <div class="comparison-cell" role="columnheader">Muzz*</div>
+          </div>
+
+          <div class="comparison-row" role="row">
+            <div class="comparison-cell" role="cell">Positioning</div>
+            <div class="comparison-cell highlight" role="cell">Nikah-first, women-first, guardian-friendly</div>
+            <div class="comparison-cell" role="cell">Muslim dating / marriage</div>
+          </div>
+
+          <div class="comparison-row" role="row">
+            <div class="comparison-cell" role="cell">Verification</div>
+            <div class="comparison-cell highlight" role="cell">Human ID + call verification</div>
+            <div class="comparison-cell" role="cell">In-app selfie & profile review</div>
+          </div>
+
+          <div class="comparison-row" role="row">
+            <div class="comparison-cell" role="cell">Women’s Privacy</div>
+            <div class="comparison-cell highlight" role="cell">Photo controls, private mode, wali access</div>
+            <div class="comparison-cell" role="cell">Profile controls & visibility settings</div>
+          </div>
+
+          <div class="comparison-row" role="row">
+            <div class="comparison-cell" role="cell">Guardian / Family Mode</div>
+            <div class="comparison-cell highlight" role="cell">Built-in guardian involvement</div>
+            <div class="comparison-cell" role="cell">Limited or indirect</div>
+          </div>
+
+          <div class="comparison-row" role="row">
+            <div class="comparison-cell" role="cell">Content Focus</div>
+            <div class="comparison-cell highlight" role="cell">Serious intent, deen, lifestyle, family fit</div>
+            <div class="comparison-cell" role="cell">Mix of casual and serious</div>
+          </div>
+        </div>
+        <p class="muted tiny">
+          *Muzz is a respected player in the market. This comparison is directional and based on publicly available information.
+        </p>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="section container reveal blog-section">
+      <header class="section-header">
+        <h2>Insights from MuslimBetterHalf</h2>
+        <p class="muted">
+          Deep dives on Muslim marriages, modern challenges, and how technology can support a healthier Nikah ecosystem.
+        </p>
+      </header>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <h3>The Impact of COVID-19 on Muslim Marriages</h3>
+          <p class="muted">
+            How the pandemic reshaped introductions, expectations, and timelines for Muslim couples worldwide.
+          </p>
+          <a
+            href="https://muslimbetterhalfai.medium.com/the-impact-of-covid-19-on-muslim-marriages-6ee6a5103370"
+            target="_blank"
+            rel="noopener"
+            class="blog-link"
+          >
+            Read on Medium →
+          </a>
+        </article>
+
+        <article class="blog-card">
+          <h3>The Diaspora of Better Half</h3>
+          <p class="muted">
+            Exploring identity, belonging, and marriage for Muslims navigating life between cultures and continents.
+          </p>
+          <a
+            href="https://muslimbetterhalfai.medium.com/the-diaspora-of-better-half-a71cb47736c"
+            target="_blank"
+            rel="noopener"
+            class="blog-link"
+          >
+            Read on Medium →
+          </a>
+        </article>
+
+        <article class="blog-card">
+          <h3>Rising Divorce Trends in Muslim Societies</h3>
+          <p class="muted">
+            What’s driving higher divorce rates — and how intentional, values-aligned matchmaking can help.
+          </p>
+          <a
+            href="https://muslimbetterhalfai.medium.com/the-increasing-trend-of-divorces-among-muslim-societies-muslim-betterhalf-b0b8573a6bf5"
+            target="_blank"
+            rel="noopener"
+            class="blog-link"
+          >
+            Read on Medium →
+          </a>
+        </article>
       </div>
     </section>
 
     <!-- FAQ -->
     <section class="section container reveal faq-section">
-      <div class="centered">
+      <header class="section-header">
         <h2>Frequently Asked Questions</h2>
-        <p class="muted">Answers for both future members and future investors.</p>
-      </div>
+        <p class="muted">Answers to what serious Muslims and their families ask us most.</p>
+      </header>
 
       <div class="faq-grid">
         <details class="faq-item">
-          <summary>Is this a dating app or a marriage app?</summary>
-          <p>MuslimBetterHalf is built for Nikah, not casual dating. Every product decision is aligned with long-term, intentional marriage — not quick swipes or endless chatting.</p>
+          <summary>Is MuslimBetterHalf a dating app?</summary>
+          <p>No. MuslimBetterHalf is designed specifically for Nikah and long-term commitment — not casual dating or entertainment.</p>
         </details>
 
         <details class="faq-item">
-          <summary>How do you protect women on the platform?</summary>
-          <p>Women can control who sees their photos, use blur and hidden modes, and enable guardian involvement. Combined with human verification, this creates a safer, higher-trust environment.</p>
+          <summary>How do you keep women safe on the platform?</summary>
+          <p>We combine human verification, privacy-first design, guardian controls, and reporting tools to prioritize women’s safety and comfort.</p>
         </details>
 
         <details class="faq-item">
-          <summary>What makes your verification different from other apps?</summary>
-          <p>We combine ID upload with human call-center verification — not just automated checks. This reduces fake profiles and builds a community where people can genuinely trust who they are talking to.</p>
+          <summary>Will my family or wali be able to participate?</summary>
+          <p>Yes. Our experience is designed so guardians and trusted family members can be part of the journey, not excluded from it.</p>
         </details>
 
         <details class="faq-item">
-          <summary>When will the app be fully launched?</summary>
-          <p>We are currently in the early-access waitlist stage. Our first public release will prioritize verified, high-intent users from the waitlist, followed by regional rollouts.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Why is this an attractive opportunity for investors?</summary>
-          <p>MuslimBetterHalf sits at the intersection of a large, underserved market and a trust-critical category. Our moat is built on human verification, women-first safety, and deep alignment with Islamic values.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>How will you scale verification globally?</summary>
-          <p>Our roadmap includes regional verification hubs, training playbooks, and a mix of internal teams and vetted partners to maintain quality, compliance, and scalability.</p>
+          <summary>When will the app officially launch?</summary>
+          <p>We are actively building and testing with early users. Join the waitlist to receive launch updates and early access opportunities.</p>
         </details>
       </div>
     </section>
 
-    <!-- INVESTOR SECTION -->
-    <section id="investors" class="section section-investors container reveal">
-      <h2>Why Investors Believe in MuslimBetterHalf</h2>
-      <p class="investor-lede">
-        A defensible, values-driven product with superior safety, verification, and market positioning
-        compared to mainstream Muslim matchmaking platforms.
-      </p>
-
-      <div class="investor-table-wrapper">
-        <table class="investor-table">
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>MuslimBetterHalf</th>
-              <th>Muzz</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Human ID Verification</td>
-              <td><span class="badge badge-strong">✓</span> 100% mandatory with manual human review</td>
-              <td><span class="badge badge-risk">✕</span> Automated, optional</td>
-            </tr>
-            <tr>
-              <td>Women-First Privacy</td>
-              <td><span class="badge badge-strong">✓</span> Blur control, hidden mode, guardian mode</td>
-              <td><span class="badge badge-neutral">△</span> Basic privacy tools</td>
-            </tr>
-            <tr>
-              <td>Safety Infrastructure</td>
-              <td><span class="badge badge-strong">✓</span> 24/7 global call center + fraud detection</td>
-              <td><span class="badge badge-risk">✕</span> Automated system, no human verification</td>
-            </tr>
-            <tr>
-              <td>Mission Focus</td>
-              <td><span class="badge badge-strong">✓</span> 100% Nikah-focused, intentional users</td>
-              <td><span class="badge badge-neutral">△</span> Mixed intentions (dating &amp; marriage)</td>
-            </tr>
-            <tr>
-              <td>Alignment With Islamic Values</td>
-              <td><span class="badge badge-strong">✓</span> Deeply integrated into onboarding &amp; UX</td>
-              <td><span class="badge badge-neutral">△</span> General cultural positioning</td>
-            </tr>
-            <tr>
-              <td>Profile Authenticity</td>
-              <td><span class="badge badge-strong">✓</span> High-trust environment, nearly 0 fake profiles</td>
-              <td><span class="badge badge-risk">✕</span> Automated system allows higher risk</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="investor-note">
-        MuslimBetterHalf is positioned as the <strong>trusted, compliance-ready infrastructure</strong> for global Muslim marriage —
-        not just another swipe app.
-      </p>
-    </section>
-
-    <!-- BLOG SECTION -->
-    <section id="blog" class="section container reveal blog-section">
-      <div class="centered">
-        <h2>From Our Blog</h2>
-        <p class="muted">Insights on Muslim marriage, cultural shifts, and modern matchmaking — powered by Islamic values.</p>
-      </div>
-
-      <div class="blog-grid">
-
-        <!-- BLOG CARD 1 -->
-        <a href="https://muslimbetterhalfai.medium.com/the-impact-of-covid-19-on-muslim-marriages-6ee6a5103370"
-           target="_blank"
-           class="blog-card">
-          <h3>The Impact of COVID-19 on Muslim Marriages</h3>
-          <p class="blog-excerpt">
-            COVID-19 reshaped how Muslim families approach matchmaking, trust, and long-distance Nikah…
-          </p>
-          <span class="blog-read">Read on Medium →</span>
-        </a>
-
-        <!-- BLOG CARD 2 -->
-        <a href="https://muslimbetterhalfai.medium.com/the-diaspora-of-better-half-a71cb47736c"
-           target="_blank"
-           class="blog-card">
-          <h3>The Diaspora of the “Better Half”</h3>
-          <p class="blog-excerpt">
-            Exploring how culture, migration, and globalization influence Muslim matchmaking today…
-          </p>
-          <span class="blog-read">Read on Medium →</span>
-        </a>
-
-        <!-- BLOG CARD 3 -->
-        <a href="https://muslimbetterhalfai.medium.com/the-increasing-trend-of-divorces-among-muslim-societies-muslim-betterhalf-b0b8573a6bf5"
-           target="_blank"
-           class="blog-card">
-          <h3>The Rise of Divorce in Muslim Societies</h3>
-          <p class="blog-excerpt">
-            A deep dive into increasing divorce trends — and what they reveal about modern relationships…
-          </p>
-          <span class="blog-read">Read on Medium →</span>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- MESSAGE -->
+    <!-- FINAL MESSAGE -->
     <section class="section container reveal">
-      <div class="centered">
+      <header class="section-header center">
         <h2>We Are Building the App With Love and Care</h2>
-        <p class="muted">Our team is crafting a safe, private, beautiful Nikah-focused app for Muslims worldwide.</p>
-      </div>
+        <p class="muted">
+          From product to policies, every decision is filtered through one lens: protecting the dignity of Muslims seeking a halal path to marriage.
+        </p>
+      </header>
     </section>
-
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container centre">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="MuslimBetterHalf logo" class="footer-logo" loading="lazy" />
+          <div>
+            <p class="footer-title">MuslimBetterHalf</p>
+            <p class="muted tiny">A halal, privacy-first Muslim marriage platform.</p>
+          </div>
+        </div>
 
-      <!-- SOCIAL ICONS -->
-      <div class="footer-social">
-        <a href="https://www.tiktok.com/@muslimbetterhalf" target="_blank" rel="noopener">
-          <img src="assets/icons/tiktok.svg" class="icon" alt="TikTok" />
-        </a>
+        <!-- SOCIAL ICONS -->
+        <div class="footer-social">
+          <a href="https://www.tiktok.com/@muslimbetterhalf" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="assets/icons/tiktok.svg" class="icon" alt="" />
+          </a>
 
-        <a href="https://www.facebook.com/MuslimbetterHalfAPP" target="_blank" rel="noopener">
-          <img src="assets/icons/facebook.svg" class="icon" alt="Facebook" />
-        </a>
+          <a href="https://www.facebook.com/MuslimbetterHalfAPP" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="assets/icons/facebook.svg" class="icon" alt="" />
+          </a>
 
-        <a href="https://www.instagram.com/muslimbetterhalf/" target="_blank" rel="noopener">
-          <img src="assets/icons/instagram.svg" class="icon" alt="Instagram" />
-        </a>
+          <a href="https://www.instagram.com/muslimbetterhalf/" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" class="icon" alt="" />
+          </a>
 
-        <a href="https://www.pinterest.com/mbetterhalf/" target="_blank" rel="noopener">
-          <img src="assets/icons/pinterest.svg" class="icon" alt="Pinterest" />
-        </a>
+          <a href="https://www.pinterest.com/mbetterhalf/" target="_blank" rel="noopener" aria-label="Pinterest">
+            <img src="assets/icons/pinterest.svg" class="icon" alt="" />
+          </a>
 
-        <a href="https://x.com/MuslimHalf" target="_blank" rel="noopener">
-          <img src="assets/icons/x.svg" class="icon" alt="X" />
-        </a>
+          <a href="https://x.com/MuslimHalf" target="_blank" rel="noopener" aria-label="X">
+            <img src="assets/icons/x.svg" class="icon" alt="" />
+          </a>
 
-        <a href="https://vimeo.com/user113768928" target="_blank" rel="noopener">
-          <img src="assets/icons/vimeo.svg" class="icon" alt="Vimeo" />
-        </a>
+          <a href="https://vimeo.com/user113768928" target="_blank" rel="noopener" aria-label="Vimeo">
+            <img src="assets/icons/vimeo.svg" class="icon" alt="" />
+          </a>
 
-        <a href="https://muslimbetterhalfai.medium.com/" target="_blank" rel="noopener">
-          <img src="assets/icons/medium.svg" class="icon" alt="Medium" />
-        </a>
+          <a href="https://muslimbetterhalfai.medium.com/" target="_blank" rel="noopener" aria-label="Medium">
+            <img src="assets/icons/medium.svg" class="icon" alt="" />
+          </a>
+        </div>
       </div>
 
-      <p>Made with ❤️ by Dup-Dup, LLC · OKEMOS, MI</p>
-      <p>© <span id="year"></span> Dup-Dup, LLC. All Rights Reserved.</p>
+      <p class="footer-meta">
+        Made with ❤️ by Dup-Dup, LLC · OKEMOS, MI
+      </p>
+      <p class="footer-meta">
+        © <span id="year"></span> Dup-Dup, LLC. All Rights Reserved.
+      </p>
     </div>
   </footer>
 
-
   <!-- SCRIPTS -->
   <script>
+    // Dynamic year
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Smooth scroll
     function scrollToAnchor(sel){
       const el = document.querySelector(sel);
-      if(el){ el.scrollIntoView({behavior:'smooth'}); }
+      if (el) { el.scrollIntoView({behavior: 'smooth'}); }
     }
 
+    // Reveal on scroll
     (function(){
       const items = document.querySelectorAll('.reveal');
-      const io = new IntersectionObserver(entries=>{
-        entries.forEach(e=>{
-          if(e.isIntersecting){
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
             e.target.classList.add('revealed');
             io.unobserve(e.target);
           }
         });
-      }, {threshold:0.12});
-      items.forEach(i=>io.observe(i));
+      }, { threshold: 0.12 });
+
+      items.forEach(i => io.observe(i));
     })();
 
+    // Theme toggle (dark is default)
     (function(){
-      const toggle=document.getElementById('themeToggle');
-      const root=document.documentElement;
-      const saved=localStorage.getItem('mbh-theme');
+      const toggle = document.getElementById('themeToggle');
+      const root = document.documentElement;
+      const saved = localStorage.getItem('mbh-theme');
 
-      function apply(t){
-        if(t==='light'){
-          root.setAttribute('data-theme','light');
-          toggle.textContent='Dark';
+      function apply(theme) {
+        if (theme === 'light') {
+          root.setAttribute('data-theme', 'light');
+          toggle.textContent = 'Dark';
+          toggle.setAttribute('aria-pressed', 'true');
         } else {
           root.removeAttribute('data-theme');
-          toggle.textContent='Light';
+          toggle.textContent = 'Light';
+          toggle.setAttribute('aria-pressed', 'false');
         }
       }
 
       apply(saved || 'dark');
 
-      toggle.addEventListener('click',()=>{
-        const light = root.getAttribute('data-theme')==='light';
-        const next = light ? 'dark' : 'light';
-        localStorage.setItem('mbh-theme',next);
+      toggle.addEventListener('click', () => {
+        const isLight = root.getAttribute('data-theme') === 'light';
+        const next = isLight ? 'dark' : 'light';
+        localStorage.setItem('mbh-theme', next);
         apply(next);
       });
     })();
