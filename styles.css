@@ -1012,3 +1012,20 @@ h1, h2, h3 {
 .footer-links a:hover {
   text-decoration: underline;
 }
+.seo-bridge {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #cfd6ff;
+}
+
+.seo-link {
+  color: #7da2ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.seo-link:hover {
+  text-decoration: underline;
+}
+
+
