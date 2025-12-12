@@ -994,3 +994,21 @@ h1, h2, h3 {
     justify-content: flex-start;
   }
 }
+
+.footer-links {
+  margin: 12px 0;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #b9c1ff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
