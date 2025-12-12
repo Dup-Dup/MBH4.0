@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.muslimbetterhalf.com/</loc>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Investor / Trust Focus -->
+  <url>
+    <loc>https://www.muslimbetterhalf.com/#investors</loc>
+    <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Features -->
+  <url>
+    <loc>https://www.muslimbetterhalf.com/#features</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- How It Works -->
+  <url>
+    <loc>https://www.muslimbetterhalf.com/#how</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://www.muslimbetterhalf.com/#faq</loc>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Blog / Thought Leadership -->
+  <url>
+    <loc>https://muslimbetterhalfai.medium.com/the-impact-of-covid-19-on-muslim-marriages-6ee6a5103370</loc>
+    <priority>0.60</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://muslimbetterhalfai.medium.com/the-diaspora-of-better-half-a71cb47736c</loc>
+    <priority>0.60</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://muslimbetterhalfai.medium.com/the-increasing-trend-of-divorces-among-muslim-societies-muslim-betterhalf-b0b8573a6bf5</loc>
+    <priority>0.60</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
