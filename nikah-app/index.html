@@ -1,1 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0c10" />
+  <link rel="canonical" href="https://www.muslimbetterhalf.com/nikah-app/" />
+
+  <title>Nikah App for Serious Muslims | MuslimBetterHalf</title>
+  <meta name="description" content="Looking for a Nikah app built for marriage—not dating? MuslimBetterHalf is a privacy-first, women-first Muslim marriage app with verification, guardian mode, and faith-based matching." />
+  <meta name="keywords" content="nikah app, muslim marriage app, islamic matchmaking, halal matchmaking app, muslim matrimony, muslim spouse finder, muslim matchmaking for marriage, halal marriage app, women-first muslim app" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MuslimBetterHalf" />
+  <meta property="og:url" content="https://www.muslimbetterhalf.com/nikah-app/" />
+  <meta property="og:title" content="Nikah App for Serious Muslims | MuslimBetterHalf" />
+  <meta property="og:description" content="A privacy-first Nikah app with verification and guardian mode. Built for marriage, not casual dating." />
+  <meta property="og:image" content="https://www.muslimbetterhalf.com/assets/Social.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nikah App for Serious Muslims | MuslimBetterHalf" />
+  <meta name="twitter:description" content="A privacy-first Nikah app with verification and guardian mode. Built for marriage, not casual dating." />
+  <meta name="twitter:image" content="https://www.muslimbetterhalf.com/assets/Social.png" />
+
+  <!-- Favicons (root) -->
+  <link rel="icon" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon-192.png" />
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Nikah App for Serious Muslims",
+    "url":"https://www.muslimbetterhalf.com/nikah-app/",
+    "description":"MuslimBetterHalf is a privacy-first Nikah app built for marriage, with women-first safety, verification, and guardian mode.",
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"MuslimBetterHalf",
+      "url":"https://www.muslimbetterhalf.com/"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What is a Nikah app?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"A Nikah app is a Muslim marriage app designed to help serious Muslims meet with the intention of marriage (Nikah), ideally with privacy controls and respectful interaction."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Is MuslimBetterHalf a halal alternative to dating apps?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes. MuslimBetterHalf is designed for marriage-first matching with privacy-first features and optional guardian involvement, aiming to support halal intentions."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How do you reduce fake profiles?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"By requiring verification and using layered checks and review processes to raise trust and reduce impersonation and spam."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.08);
+      --text:#f5f7fb;
+      --muted: rgba(245,247,251,.72);
+      --line: rgba(255,255,255,.12);
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --r: 18px;
+
+      --brand1:#ff5a5f;
+      --brand2:#ff2aa3;
+      --brand3:#ff8a3d;
+      --glow: 0 0 0 6px rgba(255,90,95,.10), 0 22px 70px rgba(255,42,163,.18);
+      --max: 1120px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(900px 600px at 15% -10%, rgba(255,90,95,.22), transparent 60%),
+        radial-gradient(850px 600px at 90% 0%, rgba(255,42,163,.20), transparent 55%),
+        radial-gradient(800px 700px at 20% 105%, rgba(255,138,61,.16), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(14px);
+      background: rgba(11,12,16,.65);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; text-decoration:none;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      box-shadow: var(--glow);
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .brand b{font-size:15px; letter-spacing:.2px}
+    .brand small{display:block; color:var(--muted); font-size:12px; margin-top:1px}
+    .navlinks{
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    }
+    .pill{
+      font-size:13px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      text-decoration:none;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      box-shadow: 0 14px 40px rgba(0,0,0,.25);
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.08)}
+    .btn-primary{
+      border-color: rgba(255,90,95,.45);
+      background: linear-gradient(135deg, rgba(255,90,95,.95), rgba(255,42,163,.92));
+      box-shadow: var(--glow);
+    }
+    .btn-primary:hover{filter:brightness(1.05)}
+    .hero{
+      padding:54px 0 26px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .card{
+      border:1px solid var(--line);
+      background: var(--panel);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+    }
+    .hero-card{padding:28px}
+    h1{
+      margin:0 0 10px;
+      font-size:44px;
+      line-height:1.1;
+      letter-spacing:-.6px;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:16px;
+      max-width:62ch;
+      margin:0 0 16px;
+    }
+    .badges{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 0}
+    .badge{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      border-radius:999px;
+      padding:8px 10px;
+      font-size:13px;
+      color: rgba(245,247,251,.86);
+    }
+    .side{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .stat{
+      padding:14px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+    }
+    .stat b{display:block; font-size:14px}
+    .stat span{color:var(--muted); font-size:13px}
+    .cta{
+      padding:14px;
+      border-radius:14px;
+      border:1px solid rgba(255,90,95,.28);
+      background: linear-gradient(135deg, rgba(255,90,95,.16), rgba(255,42,163,.10));
+    }
+    .cta p{margin:0 0 10px; color: rgba(245,247,251,.88)}
+    .section{
+      padding:22px 0;
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:26px;
+      letter-spacing:-.3px;
+    }
+    .muted{color:var(--muted)}
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+    }
+    .box{
+      padding:16px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+    }
+    .box h3{margin:2px 0 6px; font-size:16px}
+    .box p{margin:0; color:var(--muted); font-size:14px}
+    .split{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    .table-wrap{
+      overflow:auto;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width: 760px;
+    }
+    th, td{
+      padding:14px 14px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      vertical-align:top;
+      text-align:left;
+      font-size:14px;
+    }
+    th{
+      background: rgba(255,255,255,.06);
+      font-size:13px;
+      letter-spacing:.2px;
+      text-transform:uppercase;
+      color: rgba(245,247,251,.85);
+    }
+    tr:last-child td{border-bottom:none}
+    .check{color:#a7ffcc}
+    .warn{color:#ffd28f}
+    .x{color:#ffb0b5}
+
+    .faq{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    details{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      border-radius:16px;
+      padding:14px;
+    }
+    summary{
+      cursor:pointer;
+      font-weight:800;
+      list-style:none;
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{margin:10px 0 0; color:var(--muted); font-size:14px}
+
+    .footer{
+      margin-top:24px;
+      border-top:1px solid var(--line);
+      background: rgba(0,0,0,.18);
+    }
+    .footer-inner{
+      padding:18px 0;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+      color: rgba(245,247,251,.82);
+      font-size:13px;
+    }
+    .footer a{color: rgba(245,247,251,.90)}
+    .mini-links{display:flex; gap:10px; flex-wrap:wrap}
+    .note{
+      margin-top:10px;
+      color: rgba(245,247,251,.62);
+      font-size:12px;
+    }
+
+    /* Mobile */
+    @media (max-width: 980px){
+      h1{font-size:38px}
+      .hero-grid{grid-template-columns:1fr}
+      table{min-width:680px}
+    }
+    @media (max-width: 720px){
+      h1{font-size:34px}
+      .grid3{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      .faq{grid-template-columns:1fr}
+      .navlinks{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="/">
+          <img class="logo" src="/assets/logo.png" alt="MuslimBetterHalf logo" />
+          <div>
+            <b>MuslimBetterHalf</b>
+            <small>Nikah-first • Private • Verified</small>
+          </div>
+        </a>
+        <div class="navlinks">
+          <a class="pill" href="#features">Features</a>
+          <a class="pill" href="#comparison">Comparison</a>
+          <a class="pill" href="#faq">FAQ</a>
+        </div>
+        <a class="btn btn-primary" href="/#signup">Join Waitlist</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="card hero-card">
+          <h1>Nikah App for Serious Muslims</h1>
+          <p class="sub">
+            MuslimBetterHalf is a <b>privacy-first</b>, <b>women-first</b> Muslim marriage app designed for one goal:
+            <b>Nikah</b>. No casual dating positioning. No messy intentions.
+          </p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+            <a class="btn btn-primary" href="/#signup">Get Early Access</a>
+            <a class="btn" href="/muzz-alternative/">See Muzz Alternative</a>
+          </div>
+
+          <div class="badges" aria-label="Key pillars">
+            <span class="badge">Verification-driven trust</span>
+            <span class="badge">Guardian / family mode</span>
+            <span class="badge">Women-first privacy controls</span>
+            <span class="badge">Marriage-first matching</span>
+          </div>
+
+          <div class="note">
+            Tip: If you want this page indexed faster, add it to your <code>sitemap.xml</code> and request indexing in Search Console.
+          </div>
+        </div>
+
+        <aside class="card side">
+          <div class="stat">
+            <b>Built for trust</b>
+            <span>Raise confidence and reduce low-intent interactions.</span>
+          </div>
+          <div class="stat">
+            <b>Built for sisters</b>
+            <span>Privacy-first UX so women control visibility and pace.</span>
+          </div>
+          <div class="stat">
+            <b>Built for families</b>
+            <span>Guardian / family mode supports halal involvement.</span>
+          </div>
+
+          <div class="cta">
+            <p><b>Want the safest path?</b><br/>Join the waitlist and be first when access opens.</p>
+            <a class="btn btn-primary" href="/#signup">Join Waitlist</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="section">
+      <div class="container">
+        <h2>What to look for in a Nikah app</h2>
+        <p class="muted">If you want a marriage-first experience, these are the non-negotiables that matter most.</p>
+
+        <div class="grid3" style="margin-top:14px">
+          <div class="box">
+            <h3>1) Strong verification</h3>
+            <p>Verification reduces fake profiles, impersonation, and spam—improving trust for everyone.</p>
+          </div>
+          <div class="box">
+            <h3>2) Women-first privacy</h3>
+            <p>Visibility controls, photo privacy, and safe defaults help sisters feel secure from day one.</p>
+          </div>
+          <div class="box">
+            <h3>3) Guardian / family support</h3>
+            <p>Optional guardian mode enables a halal path and helps align intentions early.</p>
+          </div>
+        </div>
+
+        <div class="split" style="margin-top:14px">
+          <div class="box">
+            <h3>Marriage-first intentions</h3>
+            <p>Clear intent reduces “dating culture” behavior and improves match quality for Nikah.</p>
+          </div>
+          <div class="box">
+            <h3>Faith-based compatibility</h3>
+            <p>Filters for practice level and family expectations help serious users connect respectfully.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section">
+      <div class="container">
+        <h2>Quick comparison: MuslimBetterHalf vs typical dating-style apps</h2>
+        <p class="muted">A simple snapshot of what “Nikah-first” looks like in product decisions.</p>
+
+        <div class="table-wrap" style="margin-top:14px">
+          <table aria-label="Nikah app comparison table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>MuslimBetterHalf</th>
+                <th>Dating-style / mixed-intent apps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Primary focus</td>
+                <td class="check">✔ Nikah-first</td>
+                <td class="warn">⚠ Mixed intentions</td>
+              </tr>
+              <tr>
+                <td>Verification</td>
+                <td class="check">✔ Verification-driven trust</td>
+                <td class="warn">⚠ Often light / optional</td>
+              </tr>
+              <tr>
+                <td>Women-first privacy</td>
+                <td class="check">✔ Privacy-first UX</td>
+                <td class="warn">⚠ Basic controls</td>
+              </tr>
+              <tr>
+                <td>Guardian / family mode</td>
+                <td class="check">✔ Optional family involvement</td>
+                <td class="x">✖ Rare / not supported</td>
+              </tr>
+              <tr>
+                <td>Experience</td>
+                <td class="check">✔ Serious + respectful</td>
+                <td class="warn">⚠ Swipe/dating patterns</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="note">
+          You can also link this page from your homepage: <code>&lt;a href="/nikah-app/"&gt;Nikah App&lt;/a&gt;</code>
+        </p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Nikah App FAQ</h2>
+        <p class="muted">Short answers for common questions people search for.</p>
+
+        <div class="faq" style="margin-top:14px">
+          <details>
+            <summary>Is a Nikah app halal?</summary>
+            <p>It depends on the product design and user behavior. A Nikah-first platform with privacy controls and respectful interaction helps support halal intentions.</p>
+          </details>
+
+          <details>
+            <summary>How do you keep sisters safe?</summary>
+            <p>Women-first privacy defaults, strong visibility controls, and verification help reduce risk and increase trust.</p>
+          </details>
+
+          <details>
+            <summary>Do families/guardians have to be involved?</summary>
+            <p>No—guardian mode should be optional. Some users prefer family involvement early; others prefer it later.</p>
+          </details>
+
+          <details>
+            <summary>How do I join MuslimBetterHalf?</summary>
+            <p>Join the waitlist on the homepage. We’ll notify you when early access opens.</p>
+          </details>
+        </div>
+
+        <div class="card" style="padding:18px; margin-top:14px">
+          <h2 style="margin-bottom:6px">Ready for a marriage-first experience?</h2>
+          <p class="muted" style="margin:0 0 12px">Join the waitlist and be first when verified access opens.</p>
+          <a class="btn btn-primary" href="/#signup">Join Waitlist</a>
+          <a class="btn" href="/">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© <span id="y"></span> Dup-Dup, LLC · MuslimBetterHalf</div>
+        <div class="mini-links">
+          <a href="/robots.txt">robots.txt</a>
+          <a href="/sitemap.xml">sitemap.xml</a>
+          <a href="/muzz-alternative/">Muzz Alternative</a>
+        </div>
+      </div>
+      <div class="note">This page is a “pillar page” targeting the keyword <b>Nikah app</b>. Keep it stable and link to it internally.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
